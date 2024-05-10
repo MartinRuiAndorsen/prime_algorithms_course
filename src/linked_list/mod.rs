@@ -1,1 +1,1 @@
-pub mod doubly;
+pub mod queue;

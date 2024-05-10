@@ -1,5 +1,6 @@
 mod search;
 mod sort;
+mod linked_list;
 
 fn main() {
     let haystack = [1,2,3,4,5];
@@ -22,4 +23,7 @@ fn main() {
         print!("{n}");
     }
     println!("");
+
+    // Queues
+    linked_list::queue::Queue::<i32>::new();
 }
