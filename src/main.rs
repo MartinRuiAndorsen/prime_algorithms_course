@@ -25,5 +25,9 @@ fn main() {
     println!("");
 
     // Queues
-    linked_list::queue::Queue::<i32>::new();
+    println!("Queues:");
+
+    let mut queue = linked_list::queue::Queue::<i32>::new();
+    queue.add(1);
+    println!("{0}", queue.head.unwrap().value)
 }

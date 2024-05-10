@@ -1,11 +1,31 @@
 pub struct Node<T> {
-    value: T,
+    pub value: T,
     next: Option<T>
+}
+
+impl<T> Node {
+    pub fn new(val: T) {
+        return Node {
+            
+        }
+    }
+
+    pub fn add(&mut self, val: T) {
+        match &self.next {
+            Some(next) => {
+                next.add(val);
+            },
+            None => {
+                next = 
+            }
+
+        }
+    }
 }
 
 pub struct Queue<T> {
     // head
-    head: Option<Node<T>>,
+    pub head: Option<Node<T>>,
     // Tail
     tail: Option<Node<T>>,
 }
@@ -24,10 +44,7 @@ impl<T> Queue<T> {
                 });
             },
             Some(head) => {
-                self.head = Some(Node {
-                    value: val,
-                    next: None
-                });
+                head.next.add(val)
             }
             
         }
